@@ -545,7 +545,7 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
           
 
   
- <div id="gitalk-container"></div>
+    <div id="gitalk-container"></div>
   
 
 
@@ -883,8 +883,11 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
 
 
 
+
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '3af57554082625067ab6',
@@ -893,11 +896,17 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
           owner: 'GeniFish',
           admin: ['GeniFish'],
           id: location.pathname,
-          distractionFreeMode: 'true'
+          labels: 'gitalk',
+          perPage: 15,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: true
         })
+
         gitalk.render('gitalk-container')           
        </script>
 
+.gt-container a{border-bottom: none;}
   
 
 
