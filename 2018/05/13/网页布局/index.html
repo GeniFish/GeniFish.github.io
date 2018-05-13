@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="前端学习," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -86,18 +86,24 @@
 
 
 
-<meta name="description" content="一、什么是匿名函数创建一个函数并将它赋值给变量functionName，这种情况下创建的函数，即匿名函数。（函数表达式就是匿名函数） 二、闭包1.什么是闭包？闭包就是能够读取其他函数内部变量的函数。只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。举个栗子：我们只要把f2作为返回值，我们就可以在f1外部读取它的内部变量了 function f1 () {">
-<meta name="keywords" content="前端学习">
+<meta name="description" content="前言网页实质是块与块之间的位置，块挨着块，块嵌套块，块叠着块。 三种关系：相邻，嵌套，重叠 下面介绍网页布局的常用几种方式  1.一列布局这个so so esay，但是还是做一下笔记吧。一般都是固定的宽高，设置margin : 0 auto来水平居中，用于界面显著标题的展示等； .main{             width: 200px;             height: 100px;">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript闭包笔记">
-<meta property="og:url" content="http://fish7.top/2018/05/06/JavaScript闭包笔记/index.html">
+<meta property="og:title" content="网页布局">
+<meta property="og:url" content="http://fish7.top/2018/05/13/网页布局/index.html">
 <meta property="og:site_name" content="GeniFish&#39;s Blog">
-<meta property="og:description" content="一、什么是匿名函数创建一个函数并将它赋值给变量functionName，这种情况下创建的函数，即匿名函数。（函数表达式就是匿名函数） 二、闭包1.什么是闭包？闭包就是能够读取其他函数内部变量的函数。只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。举个栗子：我们只要把f2作为返回值，我们就可以在f1外部读取它的内部变量了 function f1 () {">
+<meta property="og:description" content="前言网页实质是块与块之间的位置，块挨着块，块嵌套块，块叠着块。 三种关系：相邻，嵌套，重叠 下面介绍网页布局的常用几种方式  1.一列布局这个so so esay，但是还是做一下笔记吧。一般都是固定的宽高，设置margin : 0 auto来水平居中，用于界面显著标题的展示等； .main{             width: 200px;             height: 100px;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-06T03:08:16.459Z">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/1047894/201803/1047894-20180301063419313-637038703.png">
+<meta property="og:image" content="https://i.imgur.com/UqNBQWj.png">
+<meta property="og:image" content="https://i.imgur.com/hkbABJh.png">
+<meta property="og:image" content="https://i.imgur.com/Pwcveav.png">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/1047894/201803/1047894-20180301080655572-352415473.png">
+<meta property="og:updated_time" content="2018-05-13T10:16:13.109Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript闭包笔记">
-<meta name="twitter:description" content="一、什么是匿名函数创建一个函数并将它赋值给变量functionName，这种情况下创建的函数，即匿名函数。（函数表达式就是匿名函数） 二、闭包1.什么是闭包？闭包就是能够读取其他函数内部变量的函数。只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。举个栗子：我们只要把f2作为返回值，我们就可以在f1外部读取它的内部变量了 function f1 () {">
+<meta name="twitter:title" content="网页布局">
+<meta name="twitter:description" content="前言网页实质是块与块之间的位置，块挨着块，块嵌套块，块叠着块。 三种关系：相邻，嵌套，重叠 下面介绍网页布局的常用几种方式  1.一列布局这个so so esay，但是还是做一下笔记吧。一般都是固定的宽高，设置margin : 0 auto来水平居中，用于界面显著标题的展示等； .main{             width: 200px;             height: 100px;">
+<meta name="twitter:image" content="https://images2018.cnblogs.com/blog/1047894/201803/1047894-20180301063419313-637038703.png">
 
 
 
@@ -127,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://fish7.top/2018/05/06/JavaScript闭包笔记/"/>
+  <link rel="canonical" href="http://fish7.top/2018/05/13/网页布局/"/>
 
 
 
 
 
-  <title>JavaScript闭包笔记 | GeniFish's Blog</title>
+  <title>网页布局 | GeniFish's Blog</title>
   
 
 
@@ -270,7 +276,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://fish7.top/2018/05/06/JavaScript闭包笔记/">
+    <link itemprop="mainEntityOfPage" href="http://fish7.top/2018/05/13/网页布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YuQi">
@@ -287,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript闭包笔记</h1>
+          <h1 class="post-title" itemprop="name headline">网页布局</h1>
         
 
         <div class="post-meta">
@@ -299,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-06T10:44:43+08:00">
-                2018-05-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-13T17:00:25+08:00">
+                2018-05-13
               </time>
             
 
@@ -322,8 +328,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/前端学习/" itemprop="url" rel="index">
+                    <span itemprop="name">前端学习</span>
                   </a>
                 </span>
 
@@ -353,7 +359,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  829
+                  1,476
                 </span>
               
 
@@ -369,7 +375,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -390,83 +396,219 @@
       
 
       
-        <h2 id="一、什么是匿名函数"><a href="#一、什么是匿名函数" class="headerlink" title="一、什么是匿名函数"></a>一、什么是匿名函数</h2><p>创建一个函数并将它赋值给变量functionName，这种情况下创建的函数，即匿名函数。（函数表达式就是匿名函数）</p>
-<h2 id="二、闭包"><a href="#二、闭包" class="headerlink" title="二、闭包"></a>二、闭包</h2><h3 id="1-什么是闭包？"><a href="#1-什么是闭包？" class="headerlink" title="1.什么是闭包？"></a>1.什么是闭包？</h3><p>闭包就是能够读取其他函数内部变量的函数。<br>只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。<br>举个栗子：<br>我们只要把f2作为返回值，我们就可以在f1外部读取它的内部变量了</p>
-<pre><code>function f1 () {
-    var num = 1;
-    function f2() {
-        console.log(num)
-    }
-    return f2;
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网页实质是块与块之间的位置，块挨着块，块嵌套块，块叠着块。</p>
+<p>三种关系：相邻，嵌套，重叠</p>
+<p>下面介绍网页布局的常用几种方式</p>
+<p><img src="https://images2018.cnblogs.com/blog/1047894/201803/1047894-20180301063419313-637038703.png" alt=""></p>
+<h2 id="1-一列布局"><a href="#1-一列布局" class="headerlink" title="1.一列布局"></a>1.一列布局</h2><p>这个so so esay，但是还是做一下笔记吧。一般都是固定的宽高，设置margin : 0 auto来水平居中，用于界面显著标题的展示等；</p>
+<pre><code>.main{
+            width: 200px;
+            height: 100px;
+            background-color: grey;
+            margin: 0 auto;
+        }
+&lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+</code></pre><h2 id="2-两列布局"><a href="#2-两列布局" class="headerlink" title="2.两列布局"></a>2.两列布局</h2><p>说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。</p>
+<p>设置左左浮动（需要确定父级元素的宽度）</p>
+<p>如果父级元素没有设置高度，则需要设置<code>overflow:hidden</code>来清除浮动产生的影响，因为浮动的子元素不能撑开父盒子，父盒子设置<code>overflow:hidden</code>才能根据子元素高度自适应。</p>
+<p>对于自己相邻元素清除浮动产生的影响用：<code>clear：both</code>。</p>
+<pre><code>&lt;div class=&quot;main&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>CSS代码</p>
+<pre><code> .main{
+    width: 400px;
+    background: red;
+    overflow: hidden;
 }
-var result = f1();
-console.log(result());　　//1
-</code></pre><h3 id="2、闭包的用途"><a href="#2、闭包的用途" class="headerlink" title="2、闭包的用途"></a>2、闭包的用途</h3><p>闭包可以用在许多地方。它的最大用处有两个，<strong>一个是前面提到的可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。</strong><br>如：</p>
-<pre><code>function f1 () {
-    var num = 1;
-    function f2() {
-        console.log(++num)
-    }
-    return f2;
-}
-var result = f1();
-console.log(result());　　//2
-console.log(result());　　//3
-</code></pre><p>原因就在于f1是f2的父函数，而f2的作用域绑上了f1函数的活动对象和全局变量对象(全家对象只有在网页关闭时才会销毁)，这导致f2始终在内存中，而f2的存在依赖于f1，因此f1也始终在内存中，不会在调用结束后，被垃圾回收机制回收。</p>
-<h3 id="3-使用闭包的注意点"><a href="#3-使用闭包的注意点" class="headerlink" title="3.使用闭包的注意点"></a>3.使用闭包的注意点</h3><p>1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</p>
-<p>2）闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值</p>
-<pre><code>var name = &quot;The Window&quot;;
-　　var object = {
-　　　　name : &quot;My Object&quot;,
-　　　　getNameFunc : function(){
-　　　　　　return function(){
-        　　　　　　　　return this.name;   
-　　　　　};   
-　　　　}
-};
-alert(object.getNameFunc()());  //The Window　　
-</code></pre><p>匿名函数的执行环境具有全局性，因此其this对象通常指向window，所以输出The Window而不是My Object。</p>
-<h2 id="4-闭包的应用场景"><a href="#4-闭包的应用场景" class="headerlink" title="4.闭包的应用场景"></a>4.闭包的应用场景</h2><p>1)使用闭包代替全局变量</p>
-<blockquote>
-<pre><code>//全局变量，test1是全局变量
-var test1=111;
-function outer(){
-    console.log(test1);
-}
-outer(); //111
-console.log(test1); //111
 
-//闭包，test2是局部变量，这是闭包的目的
-//我们经常在小范围使用全局变量，这个时候就可以使用闭包来代替。
-(function(){
-    var test2=222;
-    function test(){
-        console.log(&quot;测试闭包：&quot;+test2);
-    }
-    test(); //测试闭包：222
+.left{
+    background: yellow;
+    float: left;
 }
-)();
-console.log(test2); //未定义，这里就访问不到test2　
-</code></pre></blockquote>
-<p>2)函数外或在其他函数中访问某一函数内部的参数</p>
-<pre><code>function test () {
-    var num = 1;
-    function other() {
-        console.log(++num)
-    }
-    return other;
+
+.right{
+    background: green;
+    float: left;
 }
-var result = test();
-console.log(result());　　//2
-console.log(result());　　//3
-</code></pre><p>3)利用闭包模仿块级作用域</p>
-<pre><code>(function(){
-    for(var i =0;i&lt;5;i++){
-        console.log(i)
+</code></pre><h2 id="3-三列布局"><a href="#3-三列布局" class="headerlink" title="3.三列布局"></a>3.三列布局</h2><p>两侧定宽中间自适应  </p>
+<h3 id="用绝对定位实现"><a href="#用绝对定位实现" class="headerlink" title="用绝对定位实现"></a>用绝对定位实现</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;三列布局&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        body{ margin:0; padding:0; font-size:30px; font-weight:bold}
+        div{ line-height:50px}
+        .left{ width:200px; height:600px; background:#ccc; position:absolute; left:0; top:0}
+        .main{ height:600px; margin:0 310px 0 210px; background:#9CF}
+        .right{ height:600px; width:300px; position:absolute; top:0;right:0;  background:#FCC;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+    &lt;div class=&quot;main&quot;&gt;设计首页的第一步是设计版面布局。就象传统的报刊杂志编辑一样，我们将网页看作一张报纸，一本杂志来进行排版布局。
+    虽然动态网页技术的发展使得我们开始趋向于学习场景编剧，但是固定的网页版面设计基础依然是必须学习和掌握的。
+    它们的基本原理是共通的，你可以领会要点，举一反三。&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="用浮动实现"><a href="#用浮动实现" class="headerlink" title="用浮动实现"></a>用浮动实现</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        .main{
+            background-color: #eee;
+            margin:20px;
+            padding: 20px;
+            border: solid 1px #999;
+            overflow: hidden;
+        }
+        .left{
+               float: left;
+            width: 160px;
+            height: 100px;
+            background: blue;
+            padding: 20px;
+        }
+        .middle{
+            margin-left: 220px;
+            margin-right: 140px;
+            background: red;
+            height: 200px;
+            padding: 20px;
+         }
+        .right{
+            float: right;
+            width: 80px;
+            height: 300px;
+            background: blue;
+            padding: 20px;
+
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+      &lt;div class=&quot;main&quot;&gt;
+        &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+        &lt;div class=&quot;middle&quot;&gt;middle&lt;/div&gt;
+        &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>但是效果图是酱紫的：<br><img src="https://i.imgur.com/UqNBQWj.png" alt=""><br>虽然能实现两侧的div固定宽度不变中间的div随着浏览器宽度变化而变化，但是右边的蓝色DIV为什么会掉下来嘞？<br>我们改变一下HTML中这三个div的排列顺序看看</p>
+<pre><code>&lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+&lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+&lt;div class=&quot;middle&quot;&gt;middle&lt;/div&gt;&lt;!-- 自适应的DIV一定要放在浮动DIV后面 --&gt;
+</code></pre><p><img src="https://i.imgur.com/hkbABJh.png" alt=""></p>
+<p>是不是觉得很神奇，下面是一大堆解释：</p>
+<blockquote>
+<p>xhtml中包含两种元素：块级元素（如div、p、h、列表、table、form、body）和内联元素（如span、a、img、input）</p>
+<p>块级元素：就是一个方块，像段落一样，默认占据一行出现；</p>
+<p>内联元素：又叫行内元素，顾名思义，只能放在行内，就像一个单词，不会造成前后换行，起辅助作用。</p>
+<p>一句话归纳就是：浮动就是个带有方位的<code>display:inline-block</code>属性，而<code>inline-block</code>是将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内。</p>
+</blockquote>
+<p>这样就能解释为什么蓝色块会掉下来了，红块采用的是float，黄块紧随其后，被显示在同一行，而黄色默认的float:none，即不带有float属性，作为块级元素，蓝块就会换行。</p>
+<h3 id="Flexbox实现"><a href="#Flexbox实现" class="headerlink" title="Flexbox实现"></a>Flexbox实现</h3><p>也叫做圣杯布局格式：页面从上到下为头部、中部、脚部；头部、脚部定高，不可伸缩；中部高度自适应。<br>中部三列式布局：左右两列定宽，不可伸缩；中间内容区自适应。</p>
+<p>CSS代码：</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    *{
+        box-sizing:content-box;/* 伸缩项目自动box-sizing:border-box，所以需调整为content-box */
+        margin:0;
+        padding:0;
     }
-    console.log(i); //5　　//本身只是到4，但这个地方还是访问到了，所有输出了5
-})();
-console.log(i); //undefined　　//利用闭包后，便形成了块级作用域，让外面访问不到了。
+
+    body{
+        display:flex;
+        flex-direction:column;/* 头、中部、脚纵向显示 */
+    }
+
+    header,footer{
+        flex:0 0 50px;/* 头、脚尺寸固定，不放大、不缩小 */
+        background:#3f3f3f;
+    }
+
+    .main{
+        display:flex;
+
+        /* 
+        flex:1 == 1 1 auto：剩余空间放大比例(flex-grow)  空间不足缩小比例(flex-shrink)    分配多余空间之前项目占据的主轴空间(flex-basis)
+        flex:1指的是：中部区域自由伸缩
+        auto指的是项目本来大小，因未给main设置高度,main高度由子元素最高者决定，若子元素高度为0，则main高度为0
+        块级元素未主动设置高度或未被子元素撑起高度，浏览器默认为块级元素分配高度为0。
+        */
+        flex:1;
+    }
+
+   .content{
+        background:red;
+        height:1000px;
+
+        /* 
+        横向中间内容区自适应，即使未指定宽度，但会分配宽度 
+        块级元素未主动设置宽度或未被子元素撑起宽度，浏览器默认为块级元素分配宽度为可使用的全部宽度，比如全屏宽。
+        */
+        flex:1;
+   }
+   .left,.right{
+        height:800px;
+        background:blue;
+        flex:0 0 100px;/* 左右两列固定宽 */
+   }
+
+   .left{
+        order:-1;/* 让left居于左侧 */
+   }
+
+&lt;/style&gt;
+</code></pre><p>HTML代码：</p>
+<pre><code>&lt;body&gt;
+    &lt;header&gt;&lt;/header&gt;
+    &lt;div class=&quot;main&quot;&gt;
+        &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre><p>效果如下</p>
+<p><img src="https://i.imgur.com/Pwcveav.png" alt=""></p>
+<h2 id="4-混合布局"><a href="#4-混合布局" class="headerlink" title="4.混合布局"></a>4.混合布局</h2><p>混合布局其实就是前面三种一起用而已啦<br>还是举个栗子吧</p>
+<p><img src="https://images2018.cnblogs.com/blog/1047894/201803/1047894-20180301080655572-352415473.png" alt=""></p>
+<p>CSS代码：</p>
+<pre><code>.top{
+    height: 100px;
+    background: teal;
+}
+.footer{
+    height: 100px;
+    background: wheat;
+}
+.main{
+    width: 100%;
+    background: red;
+    overflow: hidden;
+}
+.left{
+    background: yellow;
+    float: left;
+    width: 50%;
+}
+.right{
+    background: green;
+    float: right;
+    width: 50%;
+}
+</code></pre><p>HTML代码：</p>
+<pre><code>&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
 </code></pre>
       
     </div>
@@ -494,7 +636,7 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
       
         <div class="post-tags">
           
-            <a href="/tags/前端学习/" rel="tag"><i class="fa fa-tag"></i> 前端学习</a>
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
           
         </div>
       
@@ -507,8 +649,8 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/一些使用字体和文本属性的小技巧/" rel="next" title="一些使用字体和文本属性的小技巧">
-                <i class="fa fa-chevron-left"></i> 一些使用字体和文本属性的小技巧
+              <a href="/2018/05/06/JavaScript闭包笔记/" rel="next" title="JavaScript闭包笔记">
+                <i class="fa fa-chevron-left"></i> JavaScript闭包笔记
               </a>
             
           </div>
@@ -516,10 +658,6 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/13/网页布局/" rel="prev" title="网页布局">
-                网页布局 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -679,7 +817,7 @@ console.log(i); //undefined　　//利用闭包后，便形成了块级作用域
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、什么是匿名函数"><span class="nav-number">1.</span> <span class="nav-text">一、什么是匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、闭包"><span class="nav-number">2.</span> <span class="nav-text">二、闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-什么是闭包？"><span class="nav-number">2.1.</span> <span class="nav-text">1.什么是闭包？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、闭包的用途"><span class="nav-number">2.2.</span> <span class="nav-text">2、闭包的用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-使用闭包的注意点"><span class="nav-number">2.3.</span> <span class="nav-text">3.使用闭包的注意点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-闭包的应用场景"><span class="nav-number">3.</span> <span class="nav-text">4.闭包的应用场景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-一列布局"><span class="nav-number">2.</span> <span class="nav-text">1.一列布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-两列布局"><span class="nav-number">3.</span> <span class="nav-text">2.两列布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-三列布局"><span class="nav-number">4.</span> <span class="nav-text">3.三列布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用绝对定位实现"><span class="nav-number">4.1.</span> <span class="nav-text">用绝对定位实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用浮动实现"><span class="nav-number">4.2.</span> <span class="nav-text">用浮动实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flexbox实现"><span class="nav-number">4.3.</span> <span class="nav-text">Flexbox实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-混合布局"><span class="nav-number">5.</span> <span class="nav-text">4.混合布局</span></a></li></ol></div>
             
 
           </div>
