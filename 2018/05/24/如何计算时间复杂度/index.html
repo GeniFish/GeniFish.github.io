@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="数据结构," />
 
 
 
@@ -86,20 +86,18 @@
 
 
 
-<meta name="description" content="记录在NexT主题中添加gitalk评论系统的步骤。 gitalk：一个基于 Github Issue 和 Preact 开发的评论插件详情Demo可见：https://gitalk.github.io/ 新建仓库 Github上新建一个仓库，命名随便只要记得住就好了，例如gitalk 创建OAuth Application，没有的小伙伴戳这里去创建   参数说明：Application name">
-<meta name="keywords" content="hexo">
+<meta name="description" content="时间复杂度概述时间频度一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多，它花费时间就多。一个算法中的语句执行次数称为语句频度或时间频度。记为T(n)。 时间复杂度一般情况下，算法中基本操作重">
+<meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何给Hexo+Next主题博客添加Gitalk评论插件">
-<meta property="og:url" content="http://fish7.top/2018/05/16/如何给Hexo-Next主题博客添加Gitalk评论插件/index.html">
+<meta property="og:title" content="计算时间复杂度">
+<meta property="og:url" content="http://fish7.top/2018/05/24/如何计算时间复杂度/index.html">
 <meta property="og:site_name" content="GeniFish&#39;s Blog">
-<meta property="og:description" content="记录在NexT主题中添加gitalk评论系统的步骤。 gitalk：一个基于 Github Issue 和 Preact 开发的评论插件详情Demo可见：https://gitalk.github.io/ 新建仓库 Github上新建一个仓库，命名随便只要记得住就好了，例如gitalk 创建OAuth Application，没有的小伙伴戳这里去创建   参数说明：Application name">
+<meta property="og:description" content="时间复杂度概述时间频度一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多，它花费时间就多。一个算法中的语句执行次数称为语句频度或时间频度。记为T(n)。 时间复杂度一般情况下，算法中基本操作重">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.imgur.com/9q8skZh.png">
-<meta property="og:updated_time" content="2018-05-16T16:35:50.153Z">
+<meta property="og:updated_time" content="2018-05-24T11:38:24.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何给Hexo+Next主题博客添加Gitalk评论插件">
-<meta name="twitter:description" content="记录在NexT主题中添加gitalk评论系统的步骤。 gitalk：一个基于 Github Issue 和 Preact 开发的评论插件详情Demo可见：https://gitalk.github.io/ 新建仓库 Github上新建一个仓库，命名随便只要记得住就好了，例如gitalk 创建OAuth Application，没有的小伙伴戳这里去创建   参数说明：Application name">
-<meta name="twitter:image" content="https://i.imgur.com/9q8skZh.png">
+<meta name="twitter:title" content="计算时间复杂度">
+<meta name="twitter:description" content="时间复杂度概述时间频度一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多，它花费时间就多。一个算法中的语句执行次数称为语句频度或时间频度。记为T(n)。 时间复杂度一般情况下，算法中基本操作重">
 
 
 
@@ -129,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://fish7.top/2018/05/16/如何给Hexo-Next主题博客添加Gitalk评论插件/"/>
+  <link rel="canonical" href="http://fish7.top/2018/05/24/如何计算时间复杂度/"/>
 
 
 
 
 
-  <title>如何给Hexo+Next主题博客添加Gitalk评论插件 | GeniFish's Blog</title>
+  <title>计算时间复杂度 | GeniFish's Blog</title>
   
 
 
@@ -272,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://fish7.top/2018/05/16/如何给Hexo-Next主题博客添加Gitalk评论插件/">
+    <link itemprop="mainEntityOfPage" href="http://fish7.top/2018/05/24/如何计算时间复杂度/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YuQi">
@@ -289,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何给Hexo+Next主题博客添加Gitalk评论插件</h1>
+          <h1 class="post-title" itemprop="name headline">计算时间复杂度</h1>
         
 
         <div class="post-meta">
@@ -301,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T23:42:34+08:00">
-                2018-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-24T19:23:32+08:00">
+                2018-05-24
               </time>
             
 
@@ -311,6 +309,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -333,7 +353,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  515
+                  665
                 </span>
               
 
@@ -349,7 +369,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -370,58 +390,35 @@
       
 
       
-        <p>记录在NexT主题中添加gitalk评论系统的步骤。</p>
-<p>gitalk：一个基于 Github Issue 和 Preact 开发的评论插件<br>详情Demo可见：<a href="https://gitalk.github.io/" target="_blank" rel="noopener">https://gitalk.github.io/</a></p>
-<h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><ol>
-<li>Github上新建一个仓库，命名随便只要记得住就好了，例如gitalk</li>
-<li>创建OAuth Application，没有的小伙伴<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">戳这里</a>去创建</li>
+        <h2 id="时间复杂度概述"><a href="#时间复杂度概述" class="headerlink" title="时间复杂度概述"></a>时间复杂度概述</h2><h3 id="时间频度"><a href="#时间频度" class="headerlink" title="时间频度"></a>时间频度</h3><p>一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多，它花费时间就多。一个算法中的语句执行次数称为语句频度或时间频度。记为T(n)。</p>
+<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><p>一般情况下，算法中基本操作重复执行的次数是问题规模n的某个函数，用T(n)表示，若有某个辅助函数f(n),存在一个正常数c使得fn*c&gt;=T(n)恒成立。记作T(n)=O(f(n)),称O(f(n)) 为算法的渐进时间复杂度，简称时间复杂度。</p>
+<p>在各种不同算法中，若算法中语句执行次数为一个常数，则时间复杂度为O(1),另外，在时间频度不相同时，时间复杂度有可能相同，如T(n)=n^2+3n+4与T(n)=4n^2+2n+1它们的频度不同，但时间复杂度相同，都为O(n^2)。</p>
+<h2 id="时间复杂度计算"><a href="#时间复杂度计算" class="headerlink" title="时间复杂度计算"></a>时间复杂度计算</h2><ol>
+<li>找出所有语句的频度并组成执行次数T(n)</li>
+<li>T(n)的数量级,忽略常量、低次幂和最高次幂的系数,f(n)=T(n)的数量级</li>
+<li>T(n)=O(f(n))</li>
 </ol>
-<p><img src="https://i.imgur.com/9q8skZh.png" alt=""></p>
-<p>参数说明：<br>Application name： # 应用名称，随意填，例如gitalk<br>Homepage URL： # 网站URL，如<a href="https://genifish.github.io" target="_blank" rel="noopener">https://genifish.github.io</a><br>Application description： # 描述，随意<br>Authorization callback URL：# 网站URL，这个不能乱填！一定要填自己的博客域名</p>
-<p>点击<br><em>Register application</em>按钮创建后，页面跳转后，其中<code>Client ID</code>和<code>Client Secret</code>在后面的配置中需要用到，到时复制粘贴即可。</p>
-<h3 id="修改主题文件"><a href="#修改主题文件" class="headerlink" title="修改主题文件"></a>修改主题文件</h3><p>在主题配置文件next/_config.yml中添加如下内容：</p>
+<p>举例：</p>
+<p><code>int num1, num2;</code><br>     <code>for(int i=0; i&lt;n; i++){</code><br>         <code>num1 += 1;</code><br>     <code>for(int j=1; j&lt;=n; j*=2){</code><br>        <code>num2 += num1;</code><br>     <code>}</code><br>     <code>}</code></p>
+<p>1、</p>
 <blockquote>
-<pre><code># Gitalk
-gitalk: 
-  enable: true    #用来做启用判断可以不用
-  clientID: &apos;your clientID&apos;    #上面生成的往这里复制粘贴
-  clientSecret: &apos;your clientSecret&apos;   #同上
-  repo: Blog_comments    #先前创建的仓库名称，如gitalk
-  owner:     #你的github用户名
-  admin:     #你的github用户名
-  distractionFreeMode: true
-</code></pre></blockquote>
-<h3 id="gitalk-swig"><a href="#gitalk-swig" class="headerlink" title="gitalk.swig"></a>gitalk.swig</h3><p>找到<code>next/layout/_third-party/comments</code>文件夹，新建<code>gitalk.swig</code>文件，代码如下：</p>
-<pre><code>{% if page.comments && theme.gitalk.enable %}
-	  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-	  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-	   <script type="text/javascript">
-	        var gitalk = new Gitalk({
-	          clientID: '{{ theme.gitalk.ClientID }}',
-	          clientSecret: '{{ theme.gitalk.ClientSecret }}',
-	          repo: '{{ theme.gitalk.repo }}',
-	          owner: '{{ theme.gitalk.githubID }}',
-	          admin: ['{{ theme.gitalk.adminUser }}'],
-	          id: location.pathname,
-	          distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
-	        })
-	        gitalk.render('gitalk-container')           
-	       </script>
-	{% endif %}
-</code></pre><h3 id="comments-swig"><a href="#comments-swig" class="headerlink" title="comments.swig"></a>comments.swig</h3><p>修改<code>/layout/_partials/comments.swig</code>，在最后<code>div</code>标签中添加如下内容添加内容：</p>
-<pre><code>{% elseif theme.gitalk.enable %}
- &lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
-</code></pre><h3 id="index-swig"><a href="#index-swig" class="headerlink" title="index.swig"></a>index.swig</h3><p>修改<code>layout/_third-party/comments/index.swig</code>，在最后一行添加内容：</p>
-<pre><code>{% include 'gitalk.swig' %}
-</code></pre><h3 id="gitalk-styl"><a href="#gitalk-styl" class="headerlink" title="gitalk.styl"></a>gitalk.styl</h3><p>新建<code>/source/css/_common/components/third-party/gitalk.styl</code>文件，添加内容：</p>
-<pre><code>.gt-header a, .gt-comments a, .gt-popup a
-  border-bottom: none;
-.gt-container .gt-popup .gt-action.is--active:before
-  top: 0.7em;
-</code></pre><h3 id="third-party-styl"><a href="#third-party-styl" class="headerlink" title="third-party.styl"></a>third-party.styl</h3><p>修改<code>/source/css/_common/components/third-party/third-party.styl</code>，在最后一行上添加内容，引入样式：</p>
-<pre><code>@import &quot;gitalk&quot;;
-</code></pre><p>以上就是NexT中添加gitalk评论的配置，博客上传到GitHub上后，打开页面进入某一博客内容下，就可看到评论框啦，使用自己的GitHub第一次登录创建Issues可能会有点慢。</p>
-<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>如果评论框没有出现，应该是哪里配置没有填对，也可能是<a href="https://github.com/gitalk/gitalk/issues/115" target="_blank" rel="noopener">这个原因</a></p>
+<p>语句int num1, num2;的频度为1；<br>语句i=0;的频度为1；<br>语句i&lt;n; i++; num1+=1; j=1; 的频度为n；<br>语句j&lt;=n; j=2; num2+=num1;的频度为n<em>log2(n)</em>；<br>(为什么会出现log2(n)呢？是因为循环x次，j=2^x ,当j=n时停止循环，就是2^x=n则有log2(n)=x时停止 ,即循环次数为log2(n)。)<br>所以T(n) = 2 + 4n + 3n*log2n</p>
+</blockquote>
+<p>2、</p>
+<blockquote>
+<p>忽略掉T(n)中的常量、低次幂和最高次幂的系数。<br>f(n) = n*logn</p>
+</blockquote>
+<p>3</p>
+<blockquote>
+<p>代入公式<br>T(n) =O(f(n))= O(n*logn)</p>
+</blockquote>
+<h2 id="时间复杂度比较"><a href="#时间复杂度比较" class="headerlink" title="时间复杂度比较"></a>时间复杂度比较</h2><p>常数阶O(1), 对数阶O(logn), 线性阶O(n), 线性对数阶O(nlogn), 平方阶O(n^2)， 立方阶O(n^3),…， k次方阶O(n^k), 指数阶O(2^n) 。</p>
+<blockquote>
+<p>Ο(1)＜Ο(logn)＜Ο(n)＜Ο(nlogn)＜Ο(n2)＜Ο(n3)＜…＜Ο(2^n)和Ο(n!)</p>
+</blockquote>
+<blockquote>
+<p>一些大小需要根据问题的规模n来进行判断。</p>
+</blockquote>
 
       
     </div>
@@ -449,7 +446,7 @@ gitalk:
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+            <a href="/tags/数据结构/" rel="tag"><i class="fa fa-tag"></i> 数据结构</a>
           
         </div>
       
@@ -462,8 +459,8 @@ gitalk:
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/13/网页布局/" rel="next" title="网页布局">
-                <i class="fa fa-chevron-left"></i> 网页布局
+              <a href="/2018/05/23/一些dalao的网址/" rel="next" title="一些dalao的网址">
+                <i class="fa fa-chevron-left"></i> 一些dalao的网址
               </a>
             
           </div>
@@ -471,10 +468,6 @@ gitalk:
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/23/一些dalao的网址/" rel="prev" title="一些dalao的网址">
-                一些dalao的网址 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -634,7 +627,7 @@ gitalk:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建仓库"><span class="nav-number">1.</span> <span class="nav-text">新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题文件"><span class="nav-number">2.</span> <span class="nav-text">修改主题文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-swig"><span class="nav-number">3.</span> <span class="nav-text">gitalk.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#comments-swig"><span class="nav-number">4.</span> <span class="nav-text">comments.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#index-swig"><span class="nav-number">5.</span> <span class="nav-text">index.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitalk-styl"><span class="nav-number">6.</span> <span class="nav-text">gitalk.styl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#third-party-styl"><span class="nav-number">7.</span> <span class="nav-text">third-party.styl</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">7.1.</span> <span class="nav-text">问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#时间复杂度概述"><span class="nav-number">1.</span> <span class="nav-text">时间复杂度概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间频度"><span class="nav-number">1.1.</span> <span class="nav-text">时间频度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间复杂度"><span class="nav-number">1.2.</span> <span class="nav-text">时间复杂度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间复杂度计算"><span class="nav-number">2.</span> <span class="nav-text">时间复杂度计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间复杂度比较"><span class="nav-number">3.</span> <span class="nav-text">时间复杂度比较</span></a></li></ol></div>
             
 
           </div>
